@@ -16,7 +16,7 @@ module.exports = {
         new CopyWebpackPlugin([
             { from: 'src/index.js', flatten: true },
             { from: 'src/*.html', flatten: true },
-            { from: 'src/specs/*.yaml', flatten: true },
+            { from: 'src/specs' },
             { from: 'node_modules/swagger-ui-dist/swagger*.js', to: '.', flatten: true },
             { from: 'node_modules/swagger-ui-dist/*.css', to: '.', flatten: true },
             { from: 'node_modules/swagger-ui-dist/*.png', to: '.', flatten: true }
